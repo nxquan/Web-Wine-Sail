@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Tour - SetSail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-contact">
+                <ul class="header-contact__list">
+                    <li class="header-contact__item">
+                        <a href="mailto: setsail@qode.com" class="header-contact__item-link">
+                            <i class="header-contact__item-icon far fa-envelope"></i>
+                            setsail@qode.com
+                        </a>
+                    </li>
+                    <li class="header-contact__item">
+                        <a href="tel: 1 562 867 5309" class="header-contact__item-link">
+                            <i class="header-contact__item-icon fas fa-phone"></i>
+                            1 562 867 5309
+                        </a>
+                    </li>
+                    <li class="header-contact__item">
+                        <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" class="header-contact__item-link">
+                            <i class="header-contact__item-icon fas fa-map-marker-alt"></i>
+                            Broadway & Morris St, New York
+                        </a>
+                    </li>
+                    <li class="header-contact__item">
+                        <a href="" class="header-contact__item-link">
+                            <i
+                                class="header-contact__item-icon header-contact__item-icon--white-color fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="header-contact__item-link">
+                            <i
+                                class="header-contact__item-icon header-contact__item-icon--white-color fab fa-pinterest"></i>
+                        </a>
+                        <a href="" class="header-contact__item-link">
+                            <i
+                                class="header-contact__item-icon header-contact__item-icon--white-color fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="header-contact__item-link">
+                            <i
+                                class="header-contact__item-icon header-contact__item-icon--white-color fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-language header-language--open-menu">
+                    <a href="" class="header-language__link">
+                        English
+                        <i class="header-language__icon fas fa-chevron-down"></i>
+                    </a>
+                    <div class="header-language-menu">
+                        <ul class="header-language-menu__list">
+                            <li class="header-language-menu__item">
+                                <a href="" class="header-language-menu__item-link">
+                                    French
+                                </a>
+                            </li>
+                            <li class="header-language-menu__item">
+                                <a href="" class="header-language-menu__item-link">
+                                    German
+                                </a>
+                            </li>
+                            <li class="header-language-menu__item">
+                                <a href="" class="header-language-menu__item-link">
+                                    Italian
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="header-user">
+                    <a href="" class="header-user__link">
+                        <svg class="header-user__icon " version="1.1" x="0px" y="0px" viewBox="0 0 23 23"
+                            enable-background="new 0 0 23 23" xml:space="preserve">
+                            <g>
+                                <path fill="white"
+                                    d="M11.5,14.1c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C15.5,12.3,13.7,14.1,11.5,14.1z M11.5,7.3
+                                    c-1.6,0-2.8,1.3-2.8,2.8c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8C14.3,8.5,13,7.3,11.5,7.3z" />
+                                <path fill="white" d="M11.5,23c-3.1,0-5.9-1.2-8.1-3.4c-2.2-2.2-3.4-5-3.4-8.1s1.2-5.9,3.4-8.1c2.2-2.2,5-3.4,8.1-3.4
+                                    s5.9,1.2,8.1,3.4c2.2,2.2,3.4,5,3.4,8.1s-1.2,5.9-3.4,8.1C17.4,21.8,14.5,23,11.5,23z M11.5,1.2C5.8,1.2,1.2,5.9,1.2,11.5
+                                    s4.6,10.3,10.3,10.3s10.3-4.6,10.3-10.3S17.1,1.2,11.5,1.2z" />
+                                <path fill="white" d="M11.5,23c-1.5,0-2.9-0.3-4.2-0.8c-0.2-0.1-0.4-0.3-0.4-0.6v-5.3c0-1.8,1.5-3.3,3.3-3.3h2.6
+                                    c1.8,0,3.3,1.5,3.3,3.3v5.3c0,0.2-0.1,0.5-0.4,0.6C14.4,22.7,12.9,23,11.5,23z M8.1,21.2c1.1,0.4,2.2,0.6,3.4,0.6s2.3-0.2,3.4-0.6
+                                    v-4.9c0-1.2-0.9-2.1-2.1-2.1h-2.6c-1.2,0-2.1,0.9-2.1,2.1V21.2z" />
+                            </g>
+                        </svg>
+
+                    </a>
+                </span>
+            </div>
+            <div class="header-logo">
+                <a href="" class="header-logo__link">
+                    <img src="./assets/images/header/logo-centered.png" alt="" class="header-logo__img">
+                </a>
+            </div>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link nav__item-link--active">Home</a>
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Travel Agency</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Winter Holidays</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Exotic Destinations</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Summer Holidays</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">City Tours</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">New Year Trips</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Destinations Carousel</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link subnav__item-link--active">Wine Tours</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Vacation Showcase</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Landing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link">Pages</a>
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">About Us</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">What We Offer</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Our Team</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Get In Touch</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Contact Us</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">FAQ Page</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Coming Soon</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Error Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link">Destinations</a>
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Destinations List</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Destinations Slider</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Destinations Item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link">Tours</a>
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Standard List</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Gallery List</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Split List</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Tour Item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link">Blog</a>
+                        <div class="subnav">
+                            <ul class="subnav__list">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__item-link">Blog Masonry</a>
+                                </li>
+                                <li class="subnav__item subnav__item--open-subnav">
+                                    <a href="" class="subnav__item-link">Blog Standard</a>
+                                    <i class="subnav__item-icon pull-right fas fa-chevron-right"></i>
+                                    <div class="subnav subnav--position-right pos-top--100">
+                                        <ul class="subnav__list">
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Right Sidebar</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Left Sidebar</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Without Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="subnav__item subnav__item--open-subnav">
+                                    <a href="" class="subnav__item-link">Post Types</a>
+                                    <i class="subnav__item-icon pull-right fas fa-chevron-right"></i>
+                                    <div class="subnav subnav--position-right pos-top--100">
+                                        <ul class="subnav__list">
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Standark</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Gallery</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Link</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Quote</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Video</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">Audio</a>
+                                            </li>
+                                            <li class="subnav__item">
+                                                <a href="" class="subnav__item-link">No Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav">
+                        <a href="" class="nav__item-link">Shop</a>
+                        <div class="subnav subnav--position-left">
+                            <ul class="subnav__list">
+                                <li class="subnav__item clearfix">
+                                    <a href="" class="subnav__item-link pull-right">Product List</a>
+                                </li>
+                                <li class="subnav__item clearfix">
+                                    <a href="" class="subnav__item-link pull-right">Product Single</a>
+                                </li>
+                                <li class="subnav__item subnav__item--open-subnav clearfix">
+                                    <i class="subnav__item-icon fas fa-chevron-left"></i>
+                                    <a href="" class="subnav__item-link pull-right">Shop Layouts</a>
+                                    <div class="subnav subnav--position-left pos-top--100">
+                                        <ul class="subnav__list">
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">Three Columns</a>
+                                            </li>
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">Four Columns</a>
+                                            </li>
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">Full Width</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="subnav__item subnav__item--open-subnav">
+                                    <i class="subnav__item-icon fas fa-chevron-left"></i>
+                                    <a href="" class="subnav__item-link pull-right">Shop Pages</a>
+                                    <div class="subnav subnav--position-left pos-top--100">
+                                        <ul class="subnav__list">
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">My Account</a>
+                                            </li>
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">Cart</a>
+                                            </li>
+                                            <li class="subnav__item clearfix">
+                                                <a href="" class="pull-right subnav__item-link">Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item--open-subnav-full">
+                        <a href="" class="nav__item-link">Elements</a>
+                        <div class="subnav__full">
+                            <div class="subnav__1-4">
+                                <span class="subnav__1-4-heading">FEATURED</span>
+                                <ul class="subnav__1-4-list">
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Tour List</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Tour Carousel</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Tour Filter</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Destinations With Tours</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Destinations List</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Destinations Fullscreen Slider</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Fullscreen Sections</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Review Carousel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav__1-4">
+                                <span class="subnav__1-4-heading">PRESENTATION</span>
+                                <ul class="subnav__1-4-list">
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Team</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Blog List</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Shop List</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Testimonials</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Banner</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Clients</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Parallax Sections</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Video Button</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav__1-4">
+                                <span class="subnav__1-4-heading">CLASSIC</span>
+                                <ul class="subnav__1-4-list">
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Accordions</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Tabs</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Buttons</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Google Maps</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Contact Form</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Progress Bar</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Countdown</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Counters</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Call To Action</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="subnav__1-4">
+                                <span class="subnav__1-4-heading">TYPOGRAPHY</span>
+                                <ul class="subnav__1-4-list">
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Headings</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Columns</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Section Title</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Blockqoute</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Dropcaps</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Hightlight</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Icon With Text</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Separators</a>
+                                    </li>
+                                    <li class="subnav__1-4-item">
+                                        <a href="" class="subnav__1-4-link">Custom Font</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </header>
+        <div class="slider grid">
+            <div class="slider__wrapper">
+                <div class="slider-with-signature">
+                    <img src="./assets/images/slider/travel-slide-3.jpg" alt="" class="slider__img-1">
+                    <img src="./assets/images/slider/travel-slide-img-1.png" alt="" class="slider__img-2">
+                </div>
+                <img src="./assets/images/slider/travel-slide-4.jpg" alt="" class="slider__img-3">
+            </div>
+            <button class="slider__btn slider__btn--position-left">
+                <i class="fas fa-chevron-left slider__btn-icon"></i>
+            </button>
+            <button class="slider__btn slider__btn--position-right">
+                <i class="fas fa-chevron-right slider__btn-icon"></i>
+            </button>
+        </div>
+        <div class="content">
+            <div class="grid">
+                <div class="content-about">
+                    <div class="content-about__wrapper-img">
+                        <img src="assets/images/contents/section_1/section-img-1.png" alt="" class="content-about__img">
+                    </div>
+                    <div class="content-about__wapper">
+                        <h2 class="content-about__heading">Our Popular Tours</h2>
+                        <p class="content-about__des">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar__header">
+                                <h6 class="progress-bar__heading">Countryside</h6>
+                                <span class="progress-bar__percent">76%</span>
+                            </div>
+                            <div class="progress-bar__line">
+                                <span class="progress-bar__percent-bar" style="--percent: 76%;"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar__header">
+                                <h6 class="progress-bar__heading">Vineyard</h6>
+                                <span class="progress-bar__percent">92%</span>
+                            </div>
+                            <div class="progress-bar__line">
+                                <span class="progress-bar__percent-bar" style="--percent: 92%;"></span>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar__header">
+                                <h6 class="progress-bar__heading">Wine Tasting</h6>
+                                <span class="progress-bar__percent">86%</span>
+                            </div>
+                            <div class="progress-bar__line">
+                                <span class="progress-bar__percent-bar" style="--percent: 86%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-lanscape-bg"></div>         
+            </div>
+            <div class="grid">
+                <div class="content-place-tour">
+                    <h6 class="content-place-tour__heading">The Best Tours</h6>
+                    <p class="content-place-tour__des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene <br> commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                    <div class="content-place-tour__list">
+                        <div class="grid__row">
+                            <div class="grid__col-2-4">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-1.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Wine Festival</span>
+                                            <span class="content-place-tour__item-price">$550</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-2.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Wine Tasting</span>
+                                            <span class="content-place-tour__item-price">$920</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-3.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Camping</span>
+                                            <span class="content-place-tour__item-price">$1550</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-4.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Harvest</span>
+                                            <span class="content-place-tour__item-price">$2600</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4 mt-30">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-5.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Champagne</span>
+                                            <span class="content-place-tour__item-price">$2130</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4 mt-30">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-6.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Villages</span>
+                                            <span class="content-place-tour__item-price">$850</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4 mt-30">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-7.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Local Wines</span>
+                                            <span class="content-place-tour__item-price">$1300</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__col-2-4 mt-30">
+                                <div class="content-place-tour__item" >
+                                    <a href="" class="content-place-tour__item-link">
+                                        <div class="content-place-tour__item-img" style="background-image: url(./assets/images/contents/section_2/place-img-1.jpg);"></div>
+                                        <div class="content-place-tour__info">
+                                            <span class="content-place-tour__item-name">Wine Festival</span>
+                                            <span class="content-place-tour__item-price">$550</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-4 content-desciptions--margin">
+                        <div class="content-desciptions">
+                            <h2 class="content-desciptions__amount">45</h2>
+                            <h4 class="content-desciptions__heading">Glasses of Wine</h4>
+                            <p class="content-desciptions__des">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
+                        </div>
+                    </div>
+                    <div class="grid__col-2-4 content-desciptions--margin">
+                        <div class="content-desciptions">
+                            <h2 class="content-desciptions__amount">126</h2>
+                            <h4 class="content-desciptions__heading">Years of experience</h4>
+                            <p class="content-desciptions__des">Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
+                        </div>
+                    </div>
+                    <div class="grid__col-2-4 content-desciptions--margin">
+                        <div class="content-desciptions">
+                            <h2 class="content-desciptions__amount">452</h2>
+                            <h4 class="content-desciptions__heading">Unique Wines</h4>
+                            <p class="content-desciptions__des">Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
+                        </div>
+                    </div>
+                    <div class="grid__col-2-4 content-desciptions--margin">
+                        <div class="content-desciptions">
+                            <h2 class="content-desciptions__amount">247</h2>
+                            <h4 class="content-desciptions__heading">Sorts of Wine</h4>
+                            <p class="content-desciptions__des">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="content-video">
+                    <div class="content-video__representation">
+                        <img src="./assets/images/contents/section_3/travel-video-button-img.jpg" alt="" class="content-video__representation-img">
+                    </div>
+                    <a href="https://vimeo.com/127347999" class="content-video__link">
+                        <img src="./assets/images/contents/section_3/play-button.png" alt="" class="content-video__btn">
+                    </a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="content-popular-tour">
+                    <div class="content-popular-tour__wrap">
+                        <h5 class="content-popular-tour__heading">Our Popular Tours</h5>
+                        <p class="content-popular-tour__des">
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo
+                        </p>
+                        <div class="content-popular-tour__belongings-list">
+                            <div class="content-popular-tour__belonging-item">
+                                <img src="./assets/images/contents/section_4/travel-custom-img-1.png" alt="" class="content-popular-tour__belonging-item-img">
+                                <p class="content-popular-tour__belonging-item-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                            </div>
+                            <div class="content-popular-tour__belonging-item">
+                                <img src="./assets/images/contents/section_4/travel-custom-img-1.png" alt="" class="content-popular-tour__belonging-item-img">
+                                <p class="content-popular-tour__belonging-item-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                            </div>
+                            <div class="content-popular-tour__belonging-item">
+                                <img src="./assets/images/contents/section_4/travel-custom-img-1.png" alt="" class="content-popular-tour__belonging-item-img">
+                                <p class="content-popular-tour__belonging-item-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                            </div>
+                            <div class="content-popular-tour__belonging-item">
+                                <img src="./assets/images/contents/section_4/travel-custom-img-1.png" alt="" class="content-popular-tour__belonging-item-img">
+                                <p class="content-popular-tour__belonging-item-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/images/contents/section_4/popular-tour-img.png" alt="" class="content-popular-tour__img">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid__row">
+                <div class="grid__col-2-4">
+                    <a href="" class="footer__logo">
+                        <img src="./assets/images/header/logo-centered.png" alt="" class="footer__logo-img">
+                    </a>
+                    <p class="footer__des">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
+                    <a href="mailto: setsail@example.com" class="footer__email" >
+                        <i class="far fa-envelope"></i>
+                        setsail@example.com
+                    </a>
+                    <a href="tel: 1 562 867 5309" class="footer__phone" >
+                        <i class="fa-solid fa-phone"></i>
+                        1 562 867 5309
+                    </a>
+                    <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" class="footer__location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Broadway & Morris St, New York
+                    </a>
+                </div>
+                <div class="grid__col-2-4">
+                    <h5 class="footer__sub-heading">Our Recent Posts</h5>
+                    <ul class="footer-trips__list">
+                        <li class="footer-trips__item">
+                            <a href="https://setsail.qodeinteractive.com/visit-thailand-bali-and-china/" class="footer-trips__item-location">Visit Thailand, Bali And China</a>
+                            <a href="https://setsail.qodeinteractive.com/2016/09/" class="footer-trips__item-time">September 7, 2016</a>
+                        </li>
+                        <li class="footer-trips__item">
+                            <a href="https://setsail.qodeinteractive.com/the-sound-of-our-jungle/" class="footer-trips__item-location">The Sound Of Our Jungle</a>
+                            <a href="https://setsail.qodeinteractive.com/2016/09/" class="footer-trips__item-time">September 7, 2016</a>
+                        </li>
+                        <li class="footer-trips__item">
+                            <a href="https://setsail.qodeinteractive.com/new-year-new-resolutions/" class="footer-trips__item-location">New Year, New Resolutions!</a>
+                            <a href="https://setsail.qodeinteractive.com/2016/09/" class="footer-trips__item-time">September 7, 2016</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__col-2-4">
+                    <h5 class="footer__sub-heading">Subscribe to our Newsletter</h5>
+                    <p class="footer__sub-des">
+                        Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                    </p>
+                    <form action="">
+                        <div class="footer__input">
+                            <i class="fa-solid fa-user footer__input-icon"></i>
+                            <input required type="text" class="footer__input-infor" placeholder="Name">
+                        </div>
+                        <div class="footer__input">
+                            <i class="fa-regular fa-envelope footer__input-icon"></i>
+                            <input required type="email" class="footer__input-infor" placeholder="Email">
+                        </div>
+                        <input required type="submit" value="SUBSCRIBE" class="footer__btn" >
+                    </form>
+                </div>
+                <div class="grid__col-2-4">
+                    <h5 class="footer__sub-heading">Our Instagram</h5>
+                    <p class="footer__sub-des">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+                    <ul class="footer-img__list clearfix">
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-1.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-2.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-3.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-4.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-5.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-6.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-7.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-8.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-9.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                        <li class="footer-img__item pull-left">
+                            <a href="" class="footer-img__item-link">
+                                <img src="./assets/images/footer/footer-img-10.jpg" alt="" class="footer-img__item-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-copyright">
+                © 2018<a href="" class="footer-copyright__link">Qode interactive</a>
+            </p>
+        </footer>
+        <button onclick="topFunction()" id="myBtn">Top</button>
+    </div>
+    <!-- <div class="modal">
+        <div class="modal__layout"></div>
+        <div class="modal__body"> -->
+            <!-- Form login -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__heading">
+                    <a href="" class="auth-form__heading-login auth-form__heading-login--active">Login</a>
+                    <a href="" class="auth-form__heading-res">Register</a>
+                </div>
+                <div class="authen-form__body">
+                    <h3 class="authen-form__body-heading">Sign In Here!</h3>
+                    <p class="authen-form__body-des">Log into your account in just a few simple steps.</p>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon fas fa-user"></i>
+                        <input required type="text" name="" id="" class="authen-form__input-input"
+                            placeholder="User Name">
+                    </div>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon fas fa-lock"></i>
+                        <input required type="password" name="" id="" class="authen-form__input-input"
+                            placeholder="Password">
+                    </div>
+                    <div class="authen-form__remember">
+                        <input id="forrememberbtn" required type="checkbox" name="" id=""
+                            class="authen-form__remember-input">
+                        <label for="forrememberbtn">Remember me</label>
+                    </div>
+                    <a href="" class="authen-form__forget">Lost your password?</a>
+                    <a href="" class="btn btn--sign-in">SIGN IN</a>
+                </div>
+                <div class="authen-form__footer">
+                    <p class="authen-form__suggest">Sign in with Facebook or Google+</p>
+                    <div class="authen_form__footer-media">
+                        <a href="" class="btn authen-form__footer-medi-1">FACEBOOK</a>
+                        <a href="" class="btn authen-form__footer-medi-2">GOOGLE+</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Register form  -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__heading">
+                    <a href="" class="auth-form__heading-login">Login</a>
+                    <a href="" class="auth-form__heading-res auth-form__heading-res--active">Register</a>
+                </div>
+                <div class="authen-form__body pb-30">
+                    <h3 class="authen-form__body-heading">Register Now!</h3>
+                    <p class="authen-form__body-des">Join the SetSail community today & set up a free account.</p>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon fas fa-user"></i>
+                        <input required type="text" name="" id="" class="authen-form__input-input"
+                            placeholder="User Name">
+                    </div>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon far fa-envelope"></i>
+                        <input required type="password" name="" id="" class="authen-form__input-input"
+                            placeholder="Email">
+                    </div>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon fas fa-lock"></i>
+                        <input required type="password" name="" id="" class="authen-form__input-input"
+                            placeholder="Password">
+                    </div>
+                    <div class="authen-form__input">
+                        <i class="authen-form__input-icon fas fa-lock"></i>
+                        <input required type="password" name="" id="" class="authen-form__input-input"
+                            placeholder="Repeat Password">
+                    </div>
+                    <a href="" class="btn btn--sign-in mb-24">REGISTER</a>
+                </div>
+                
+            </div> -->
+        <!-- </div>
+    </div> -->
+</body>
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+</html>
