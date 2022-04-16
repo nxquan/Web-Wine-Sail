@@ -19,7 +19,8 @@
 
 <body>
     <div class="app">
-        <header class="header">
+        <!-- Header -->
+        <header class="header" id="header">
             <div class="header-contact">
                 <ul class="header-contact__list">
                     <li class="header-contact__item">
@@ -60,7 +61,7 @@
                     </li>
                 </ul>
                 <div class="header-language header-language--open-menu">
-                    <a href="" class="header-language__link">
+                    <a href="#" class="header-language__link">
                         English
                         <i class="header-language__icon fas fa-chevron-down"></i>
                     </a>
@@ -85,8 +86,8 @@
                     </div>
                 </div>
                 <span class="header-user">
-                    <a href="" class="header-user__link">
-                        <svg class="header-user__icon " version="1.1" x="0px" y="0px" viewBox="0 0 23 23"
+                    <a href="#" class="header-user__link">
+                        <svg class="header-user__icon" version="1.1" x="0px" y="0px" viewBox="0 0 23 23"
                             enable-background="new 0 0 23 23" xml:space="preserve">
                             <g>
                                 <path fill="white"
@@ -448,21 +449,43 @@
                 
             </div>
         </header>
+        <!-- End of header -->
+
+        <!-- Slider -->
         <div class="slider grid">
-            <div class="slider__wrapper">
+            <div class="slide">
                 <div class="slider-with-signature">
                     <img src="./assets/images/slider/travel-slide-3.jpg" alt="" class="slider__img-1">
                     <img src="./assets/images/slider/travel-slide-img-1.png" alt="" class="slider__img-2">
                 </div>
                 <img src="./assets/images/slider/travel-slide-4.jpg" alt="" class="slider__img-3">
             </div>
-            <button class="slider__btn slider__btn--position-left">
+
+            <div class="slide">
+                <div class="slider-with-signature">
+                    <img src="./assets/images/slider/travel-slide-5.jpg" alt="" class="slider__img-1">
+                    <img src="./assets/images/slider/travel-slide-img-2.png" alt="" class="slider__img-2">
+                </div>
+                <img src="./assets/images/slider/travel-slide-6.jpg" alt="" class="slider__img-3">
+            </div>
+
+            <div class="slide">
+                <div class="slider-with-signature">
+                    <img src="./assets/images/slider/travel-slide-1.jpg" alt="" class="slider__img-1">
+                    <img src="./assets/images/slider/travel-slide-img-1.png" alt="" class="slider__img-2">
+                </div>
+                <img src="./assets/images/slider/travel-slide-2.jpg" alt="" class="slider__img-3">
+            </div>
+            <button class="slider__btn slider__btn--position-left prev-btn">
                 <i class="fas fa-chevron-left slider__btn-icon"></i>
             </button>
-            <button class="slider__btn slider__btn--position-right">
+            <button class="slider__btn slider__btn--position-right next-btn">
                 <i class="fas fa-chevron-right slider__btn-icon"></i>
             </button>
         </div>
+        <!-- End of slider -->
+
+        <!-- Content -->
         <div class="content">
             <div class="grid">
                 <div class="content-about">
@@ -605,28 +628,28 @@
                 <div class="grid__row">
                     <div class="grid__col-2-4 content-desciptions--margin">
                         <div class="content-desciptions">
-                            <h2 class="content-desciptions__amount">45</h2>
+                            <h2 class="content-descriptions__amount">45</h2>
                             <h4 class="content-desciptions__heading">Glasses of Wine</h4>
                             <p class="content-desciptions__des">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
                     </div>
                     <div class="grid__col-2-4 content-desciptions--margin">
                         <div class="content-desciptions">
-                            <h2 class="content-desciptions__amount">126</h2>
+                            <h2 class="content-descriptions__amount">126</h2>
                             <h4 class="content-desciptions__heading">Years of experience</h4>
                             <p class="content-desciptions__des">Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
                         </div>
                     </div>
                     <div class="grid__col-2-4 content-desciptions--margin">
                         <div class="content-desciptions">
-                            <h2 class="content-desciptions__amount">452</h2>
+                            <h2 class="content-descriptions__amount">452</h2>
                             <h4 class="content-desciptions__heading">Unique Wines</h4>
                             <p class="content-desciptions__des">Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
                     </div>
                     <div class="grid__col-2-4 content-desciptions--margin">
                         <div class="content-desciptions">
-                            <h2 class="content-desciptions__amount">247</h2>
+                            <h2 class="content-descriptions__amount">247</h2>
                             <h4 class="content-desciptions__heading">Sorts of Wine</h4>
                             <p class="content-desciptions__des">Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
@@ -635,12 +658,15 @@
             </div>
             <div class="grid">
                 <div class="content-video">
-                    <div class="content-video__representation">
+                    <div class="content-video__representation" id="videoBtn">
                         <img src="./assets/images/contents/section_3/travel-video-button-img.jpg" alt="" class="content-video__representation-img">
-                    </div>
-                    <a href="https://vimeo.com/127347999" class="content-video__link">
                         <img src="./assets/images/contents/section_3/play-button.png" alt="" class="content-video__btn">
-                    </a>
+                    </div>
+                    <div class="content-video-src">
+                        <video class="content-video_container" controls>
+                            <source src="./assets/videos/vintage_vines__bourgogne (720p).mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
             <div class="grid">
@@ -673,6 +699,9 @@
                 </div>
             </div>
         </div>
+        <!-- End of content -->
+
+        <!-- Footer-->
         <footer class="footer">
             <div class="grid__row">
                 <div class="grid__col-2-4">
@@ -788,37 +817,40 @@
                 © 2018<a href="" class="footer-copyright__link">Qode interactive</a>
             </p>
         </footer>
-        <button onclick="topFunction()" id="myBtn">Top</button>
+        <!-- End of footer -->
+        <a href="#header" id="to-top-btn">Top</a>
     </div>
-    <!-- <div class="modal">
+
+    <!-- Modal -->
+    <div class="modal hide-modal">
         <div class="modal__layout"></div>
-        <div class="modal__body"> -->
+        <div class="modal__body">
             <!-- Form login -->
-            <!-- <div class="auth-form">
+            <div class="auth-form active" name="login">
                 <div class="auth-form__heading">
-                    <a href="" class="auth-form__heading-login auth-form__heading-login--active">Login</a>
-                    <a href="" class="auth-form__heading-res">Register</a>
+                    <a href="#" class="auth-form__heading-btn active" name="login">Login</a>
+                    <a href="#" class="auth-form__heading-btn" name="register">Register</a>
                 </div>
                 <div class="authen-form__body">
                     <h3 class="authen-form__body-heading">Sign In Here!</h3>
                     <p class="authen-form__body-des">Log into your account in just a few simple steps.</p>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon fas fa-user"></i>
-                        <input required type="text" name="" id="" class="authen-form__input-input"
+                        <input required type="text" name="" class="authen-form__input-input"
                             placeholder="User Name">
                     </div>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon fas fa-lock"></i>
-                        <input required type="password" name="" id="" class="authen-form__input-input"
+                        <input required type="password" name="" class="authen-form__input-input"
                             placeholder="Password">
                     </div>
                     <div class="authen-form__remember">
-                        <input id="forrememberbtn" required type="checkbox" name="" id=""
+                        <input id="forrememberbtn" required type="checkbox" name=""
                             class="authen-form__remember-input">
                         <label for="forrememberbtn">Remember me</label>
                     </div>
                     <a href="" class="authen-form__forget">Lost your password?</a>
-                    <a href="" class="btn btn--sign-in">SIGN IN</a>
+                    <i class="btn btn--sign-in">SIGN IN</i>
                 </div>
                 <div class="authen-form__footer">
                     <p class="authen-form__suggest">Sign in with Facebook or Google+</p>
@@ -827,56 +859,187 @@
                         <a href="" class="btn authen-form__footer-medi-2">GOOGLE+</a>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Register form  -->
-            <!-- <div class="auth-form">
+            <div class="auth-form" name="register">
                 <div class="auth-form__heading">
-                    <a href="" class="auth-form__heading-login">Login</a>
-                    <a href="" class="auth-form__heading-res auth-form__heading-res--active">Register</a>
+                    <a href="#" class="auth-form__heading-btn" name="login">Login</a>
+                    <a href="#" class="auth-form__heading-btn active" name="register">Register</a>
                 </div>
                 <div class="authen-form__body pb-30">
                     <h3 class="authen-form__body-heading">Register Now!</h3>
                     <p class="authen-form__body-des">Join the SetSail community today & set up a free account.</p>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon fas fa-user"></i>
-                        <input required type="text" name="" id="" class="authen-form__input-input"
+                        <input required type="text" name="" class="authen-form__input-input"
                             placeholder="User Name">
                     </div>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon far fa-envelope"></i>
-                        <input required type="password" name="" id="" class="authen-form__input-input"
+                        <input required type="email" name="" class="authen-form__input-input"
                             placeholder="Email">
                     </div>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon fas fa-lock"></i>
-                        <input required type="password" name="" id="" class="authen-form__input-input"
+                        <input required type="password" name="" class="authen-form__input-input"
                             placeholder="Password">
                     </div>
                     <div class="authen-form__input">
                         <i class="authen-form__input-icon fas fa-lock"></i>
-                        <input required type="password" name="" id="" class="authen-form__input-input"
+                        <input required type="password" name="" class="authen-form__input-input"
                             placeholder="Repeat Password">
                     </div>
                     <a href="" class="btn btn--sign-in mb-24">REGISTER</a>
                 </div>
                 
-            </div> -->
-        <!-- </div>
-    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Related -->
+    <div class="side-area">
+        <div class="side-area-wrap">
+            <div class="rbtn related">
+                <div class="r-svg">
+                    <svg class="active" x="0px" y="0px" viewBox="0 0 87 87" style="fill: #fff;height: 26px; width: 29px">
+                        <path d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
+                            c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
+                            c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
+                            c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"></path>
+                    </svg>
+                    <svg width="32" height="32" viewBox="0 0 32 32" style="fill: #fff; height: 20px;">
+                        <path
+                            d="M 4,15C 4,15.552, 4.448,16, 5,16l 19.586,0 l-4.292,4.292c-0.39,0.39-0.39,1.024,0,1.414 c 0.39,0.39, 1.024,0.39, 1.414,0l 6-6c 0.092-0.092, 0.166-0.202, 0.216-0.324C 27.972,15.26, 28,15.132, 28,15.004c0-0.002,0-0.002,0-0.004 l0,0c0-0.13-0.026-0.26-0.078-0.382c-0.050-0.122-0.124-0.232-0.216-0.324l-6-6c-0.39-0.39-1.024-0.39-1.414,0 c-0.39,0.39-0.39,1.024,0,1.414L 24.586,14L 5,14 C 4.448,14, 4,14.448, 4,15z"
+                        ></path>
+                    </svg>
+                </div>
+                <span>Related</span>
+            </div>
+            <div class="rbtn buy">
+                <div class="r-svg">
+                    <svg class="active" x="0px" y="0px" viewBox="0 0 24 24" style="fill: #ee2852; height: 16px;">
+                        <circle cx="9" cy="21" r="2"></circle>
+                        <circle cx="20" cy="21" r="2"></circle>
+                        <path
+                            d="M23.8,5.4C23.6,5.1,23.3,5,23,5H6.8L6,0.8C5.9,0.3,5.5,0,5,0H1C0.4,0,0,0.4,0,1s0.4,1,1,1h3.2L5,6.2c0,0,0,0.1,0,0.1
+                                                l1.7,8.3C7,16,8.2,17,9.6,17c0,0,0,0,0.1,0h9.7c1.5,0,2.7-1,3-2.4L24,6.2C24,5.9,24,5.6,23.8,5.4z"
+                        ></path>
+                    </svg>
+                    
+                </div>
+                <span>Related</span>
+            </div>
+            <div class="side-area__container">
+                <div class="side-list">
+                    <div class="side-list__head">
+                        <div class="r-svg">
+                            <svg class="active" x="0px" y="0px" viewBox="0 0 87 87" style="fill: #ef2853;height: 40px; width: 40px">
+                                <path d="M55.4,81.5c6.1-11.1,5.2-16.1-4.3-24.3c6.1-3.5,9.5-8.5,9.1-15.7c-0.5-8.2-7.7-14.7-16.3-14.6
+                                    c-8.5,0.1-15.6,6.7-15.9,15c-0.3,8.5,5.9,15.8,14.3,16.6c1.4,0.1,2.8,0.2,4.2,0.5c5.9,1.2,10.2,6.7,9.8,12.6
+                                    c-0.4,6.4-5.5,11.4-11.8,11.7C24.9,84.2,5.9,68.5,3.2,49.3C-0.1,26.9,14.4,6.8,36.4,2.8c22.3-4,43.4,10,48.1,32
+                                    c4.3,20-8.6,41.2-28.4,46.7C55.9,81.5,55.6,81.5,55.4,81.5z"></path>
+                            </svg>
+                        </div>
+                        <h2>Qode Interactive</h2>
+                    </div>
+                    <div class="side-list__body">
+                        <span class="side-list__heading">RELATED THEMES</span>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_1.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Seafarer</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$69</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_2.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Kamperen</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_3.png" alt="" class="side-item__img">
+                                <span class="side-item__name">Augustine</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$79</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_4.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Alloggio</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_1.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Iver</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_1.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Seafarer</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$69</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_2.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Kamperen</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_3.png" alt="" class="side-item__img">
+                                <span class="side-item__name">Augustine</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$79</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_4.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Alloggio</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                        <div class="side-item">
+                            <a href="" class="side-item__link">
+                                <img src="./assets/images/side-area/item_1.jpg" alt="" class="side-item__img">
+                                <span class="side-item__name">Iver</span>
+                                <span class="side-item__tag">travel & hotels</span>
+                                <span class="side-item__price">$75</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="https://qodeinteractive.com/?_ga=2.112067332.1088945479.1650038870-2124640484.1647710834" class="side-area-button">
+                    <p>VIEW ALL QODE THEMES</p>
+                    <div class="side-area__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="9" viewBox="0 0 9 9">
+                            <image width="9" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAQAAABKmM6bAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBhISBAPLk0qYAAAAZ0lEQVQI103OsQnCUACE4S9qmofLWLpDcChXEPcIksoF3CG94ALaBDmLl0j+Kw7urjgxq2TMmBIblWLQag1KE2jcbT1w9F1WN53JpNPvQFzm6uO6rFaso/3s/xOHPHOKkFcq75xr+QPBNi/UsU/OawAAAABJRU5ErkJggg=="></image>
+                         </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End of modal -->
+    <script src="./assets/scripts/app.js"></script>
 </body>
-<script>
-    mybutton = document.getElementById("myBtn");
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-</script>
+
 </html>
